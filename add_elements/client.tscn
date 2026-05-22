@@ -1,0 +1,117 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxj3oif3147pw"]
+
+[ext_resource type="Texture2D" uid="uid://gep2ocrg4w56" path="res://icon.svg" id="1_4dqqh"]
+[ext_resource type="Script" uid="uid://oct0sojr0ndd" path="res://client.gd" id="1_jmoka"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_qgia5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bdx1y"]
+font_size = 32
+
+[node name="client" type="Node2D"]
+script = ExtResource("1_jmoka")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(419.5, 329.50003)
+scale = Vector2(196.99998, 137.50002)
+mesh = SubResource("CapsuleMesh_qgia5")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="."]
+modulate = Color(0, 0, 0, 1)
+position = Vector2(417, 128.99997)
+rotation = 1.5707964
+scale = Vector2(90.31329, 102.939606)
+mesh = SubResource("CapsuleMesh_qgia5")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 320.0
+offset_top = 84.0
+offset_right = 518.0
+offset_bottom = 457.0
+flat = true
+
+[node name="ico0" type="TextureRect" parent="."]
+offset_left = 340.00003
+offset_top = 103.99999
+offset_right = 468.00003
+offset_bottom = 232.0
+scale = Vector2(0.38040525, 0.36891815)
+texture = ExtResource("1_4dqqh")
+
+[node name="Label" type="Label" parent="ico0"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 104.33447
+offset_right = 0.6791992
+offset_bottom = -0.66552734
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_bdx1y")
+horizontal_alignment = 2
+
+[node name="ico1" type="TextureRect" parent="."]
+offset_left = 394.0
+offset_top = 102.99999
+offset_right = 522.0
+offset_bottom = 231.0
+scale = Vector2(0.38040525, 0.36891815)
+texture = ExtResource("1_4dqqh")
+
+[node name="Label" type="Label" parent="ico1"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 104.33447
+offset_right = 0.6791992
+offset_bottom = -0.66552734
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_bdx1y")
+horizontal_alignment = 2
+
+[node name="ico2" type="TextureRect" parent="."]
+offset_left = 448.0
+offset_top = 102.99999
+offset_right = 576.0
+offset_bottom = 231.0
+scale = Vector2(0.38040534, 0.36891815)
+texture = ExtResource("1_4dqqh")
+
+[node name="Label" type="Label" parent="ico2"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 104.33447
+offset_right = 0.6791992
+offset_bottom = -0.66552734
+grow_horizontal = 2
+grow_vertical = 2
+label_settings = SubResource("LabelSettings_bdx1y")
+horizontal_alignment = 2
+
+[node name="Panel0" type="Panel" parent="."]
+offset_left = 338.0
+offset_top = 102.0
+offset_right = 378.0
+offset_bottom = 142.0
+scale = Vector2(1.3229791, 1.283029)
+
+[node name="Panel1" type="Panel" parent="."]
+offset_left = 392.0
+offset_top = 102.0
+offset_right = 432.0
+offset_bottom = 142.0
+scale = Vector2(1.3229791, 1.283029)
+
+[node name="Panel2" type="Panel" parent="."]
+offset_left = 446.0
+offset_top = 102.0
+offset_right = 486.0
+offset_bottom = 142.0
+scale = Vector2(1.3229791, 1.283029)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

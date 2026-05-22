@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://co8sv0w6fuphn"]
+
+[ext_resource type="Texture2D" uid="uid://gep2ocrg4w56" path="res://icon.svg" id="1_768v6"]
+[ext_resource type="Script" uid="uid://2m8rcx0qwbyb" path="res://scripts/inventory/inv.gd" id="2_q0p6e"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vdls6"]
+font_color = Color(0.91070914, 0.8798697, 0.12873712, 1)
+
+[node name="TextureButton" type="TextureButton"]
+texture_normal = ExtResource("1_768v6")
+script = ExtResource("2_q0p6e")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 98.0
+offset_right = 121.0
+offset_bottom = 121.0
+label_settings = SubResource("LabelSettings_vdls6")
+horizontal_alignment = 2
+vertical_alignment = 1

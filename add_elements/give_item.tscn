@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxepkatk6ahlg"]
+
+[ext_resource type="Texture2D" uid="uid://gep2ocrg4w56" path="res://icon.svg" id="1_2ht1y"]
+[ext_resource type="Script" uid="uid://tbwv5nyodwwe" path="res://give_item.gd" id="2_4xad5"]
+
+[node name="give_item" type="TextureButton"]
+offset_left = 207.0
+offset_top = 142.0
+offset_right = 335.0
+offset_bottom = 270.0
+texture_normal = ExtResource("1_2ht1y")
+script = ExtResource("2_4xad5")
