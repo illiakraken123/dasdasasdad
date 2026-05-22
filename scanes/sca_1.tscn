@@ -1,0 +1,60 @@
+[gd_scene load_steps=4 format=3 uid="uid://6swma1tj07w7"]
+
+[ext_resource type="Script" uid="uid://c81cf52t572mf" path="res://scanes/Add_Client.gd" id="1_kf2gb"]
+[ext_resource type="PackedScene" uid="uid://cf4aiyljwfm2g" path="res://add_elements/crafter.tscn" id="1_x5r3r"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_kw821"]
+
+[node name="sca_1" type="Node2D"]
+
+[node name="visual" type="Node2D" parent="."]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.39800674, 0.13987178, 0.059297733, 1)
+position = Vector2(576, 325)
+scale = Vector2(2374, 654)
+mesh = SubResource("QuadMesh_kw821")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.81369454, 0.34244785, 0.19367674, 1)
+position = Vector2(576, 154.5)
+scale = Vector2(2374, 313)
+mesh = SubResource("QuadMesh_kw821")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.33733377, 0.3044913, 0.27403104, 1)
+position = Vector2(236.99998, 194.00002)
+scale = Vector2(200, 234.00002)
+mesh = SubResource("QuadMesh_kw821")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.38242704, 0.45509297, 1, 1)
+position = Vector2(793.00006, 155)
+scale = Vector2(160.00014, 148.5)
+mesh = SubResource("QuadMesh_kw821")
+
+[node name="Clienture" type="Node2D" parent="."]
+script = ExtResource("1_kf2gb")
+
+[node name="Timer" type="Timer" parent="Clienture"]
+wait_time = 5.0
+one_shot = true
+
+[node name="visual1" type="Node2D" parent="."]
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="visual1"]
+modulate = Color(0.08357126, 0.013408811, 0.0036089325, 1)
+position = Vector2(504.49997, 485.25)
+scale = Vector2(782.99994, 202.50002)
+mesh = SubResource("QuadMesh_kw821")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="visual1"]
+modulate = Color(0.19598281, 0.04924736, 0.016655924, 1)
+position = Vector2(504.49997, 414)
+scale = Vector2(782.99994, 60.000015)
+mesh = SubResource("QuadMesh_kw821")
+
+[node name="crafter" parent="." instance=ExtResource("1_x5r3r")]
+position = Vector2(762, 373)
+
+[connection signal="timeout" from="Clienture/Timer" to="Clienture" method="_on_timer_timeout"]

@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=3 uid="uid://clmkv1wyjd1lq"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_e4dtj"]
+
+[node name="sca_3" type="Node2D"]
+
+[node name="visual" type="Node2D" parent="."]
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="visual"]
+modulate = Color(0, 0.28907135, 0.04691244, 1)
+position = Vector2(576, 325)
+scale = Vector2(1158, 654)
+mesh = SubResource("QuadMesh_e4dtj")
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.32921264, 0.6336869, 1, 1)
+position = Vector2(576, 154.5)
+scale = Vector2(1158, 313)
+mesh = SubResource("QuadMesh_e4dtj")

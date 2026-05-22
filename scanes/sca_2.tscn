@@ -1,0 +1,211 @@
+[gd_scene load_steps=3 format=3 uid="uid://rj4fovbbxetr"]
+
+[ext_resource type="PackedScene" uid="uid://bxepkatk6ahlg" path="res://add_elements/give_item.tscn" id="1_l7v71"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_7k6dm"]
+
+[node name="sca_2" type="Node2D"]
+
+[node name="visual" type="Node2D" parent="."]
+
+[node name="MeshInstance2D2" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.3005081, 0.17020571, 0.020686837, 1)
+position = Vector2(576, 328)
+scale = Vector2(2379.9998, 660)
+mesh = SubResource("QuadMesh_7k6dm")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.74036497, 0.45236528, 0.11369664, 1)
+position = Vector2(576, 208)
+scale = Vector2(2383.9998, 420)
+mesh = SubResource("QuadMesh_7k6dm")
+
+[node name="MeshInstance2D3" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.17772067, 0.0917634, 0.0068832026, 1)
+position = Vector2(166.5, 299.5)
+scale = Vector2(39, 479)
+mesh = SubResource("QuadMesh_7k6dm")
+
+[node name="MeshInstance2D4" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.17772067, 0.0917634, 0.0068832026, 1)
+position = Vector2(1063, 299.5)
+scale = Vector2(39, 479)
+mesh = SubResource("QuadMesh_7k6dm")
+
+[node name="MeshInstance2D5" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.25286034, 0.13809875, 0.015513817, 1)
+position = Vector2(615, 93)
+scale = Vector2(857.99994, 66.00001)
+mesh = SubResource("QuadMesh_7k6dm")
+
+[node name="MeshInstance2D6" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.25286034, 0.13809875, 0.015513817, 1)
+position = Vector2(615, 221.99998)
+scale = Vector2(857.99994, 66.00001)
+mesh = SubResource("QuadMesh_7k6dm")
+
+[node name="MeshInstance2D7" type="MeshInstance2D" parent="visual"]
+modulate = Color(0.25286034, 0.13809875, 0.015513817, 1)
+position = Vector2(615, 364)
+scale = Vector2(857.99994, 66.00001)
+mesh = SubResource("QuadMesh_7k6dm")
+
+[node name="give_item" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 300.0
+offset_top = 147.0
+offset_right = 428.0
+offset_bottom = 275.0
+
+[node name="give_item2" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 380.0
+offset_top = 147.0
+offset_right = 508.0
+offset_bottom = 275.0
+
+[node name="give_item3" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 448.0
+offset_top = 147.0
+offset_right = 576.0
+offset_bottom = 275.0
+
+[node name="give_item4" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 528.0
+offset_top = 147.0
+offset_right = 656.0
+offset_bottom = 275.0
+
+[node name="give_item5" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 576.0
+offset_top = 147.0
+offset_right = 704.0
+offset_bottom = 275.0
+
+[node name="give_item6" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 656.0
+offset_top = 147.0
+offset_right = 784.0
+offset_bottom = 275.0
+
+[node name="give_item7" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 724.0
+offset_top = 147.0
+offset_right = 852.0
+offset_bottom = 275.0
+
+[node name="give_item8" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 804.0
+offset_top = 147.0
+offset_right = 932.0
+offset_bottom = 275.0
+
+[node name="give_item9" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 300.0
+offset_top = 418.0
+offset_right = 428.0
+offset_bottom = 546.0
+item = "відро"
+
+[node name="give_item10" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 380.0
+offset_top = 418.0
+offset_right = 508.0
+offset_bottom = 546.0
+item = "відро"
+
+[node name="give_item11" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 448.0
+offset_top = 418.0
+offset_right = 576.0
+offset_bottom = 546.0
+item = "відро"
+
+[node name="give_item12" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 528.0
+offset_top = 418.0
+offset_right = 656.0
+offset_bottom = 546.0
+item = "відро"
+
+[node name="give_item13" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 576.0
+offset_top = 418.0
+offset_right = 704.0
+offset_bottom = 546.0
+item = "відро"
+
+[node name="give_item14" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 656.0
+offset_top = 418.0
+offset_right = 784.0
+offset_bottom = 546.0
+item = "відро"
+
+[node name="give_item15" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 724.0
+offset_top = 418.0
+offset_right = 852.0
+offset_bottom = 546.0
+item = "відро"
+
+[node name="give_item16" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 804.0
+offset_top = 418.0
+offset_right = 932.0
+offset_bottom = 546.0
+item = "відро"
+
+[node name="give_item17" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 300.0
+offset_top = 17.0
+offset_right = 428.0
+offset_bottom = 145.0
+item = "цукор"
+
+[node name="give_item18" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 380.0
+offset_top = 17.0
+offset_right = 508.0
+offset_bottom = 145.0
+item = "цукор"
+
+[node name="give_item19" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 448.0
+offset_top = 17.0
+offset_right = 576.0
+offset_bottom = 145.0
+item = "цукор"
+
+[node name="give_item20" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 528.0
+offset_top = 17.0
+offset_right = 656.0
+offset_bottom = 145.0
+item = "цукор"
+
+[node name="give_item21" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 576.0
+offset_top = 17.0
+offset_right = 704.0
+offset_bottom = 145.0
+item = "цукор"
+
+[node name="give_item22" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 656.0
+offset_top = 17.0
+offset_right = 784.0
+offset_bottom = 145.0
+item = "цукор"
+
+[node name="give_item23" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 724.0
+offset_top = 17.0
+offset_right = 852.0
+offset_bottom = 145.0
+item = "цукор"
+
+[node name="give_item24" parent="." instance=ExtResource("1_l7v71")]
+offset_left = 804.0
+offset_top = 17.0
+offset_right = 932.0
+offset_bottom = 145.0
+item = "цукор"
