@@ -1,0 +1,25 @@
+[gd_scene load_steps=7 format=3 uid="uid://jfsob7opp1lp"]
+
+[ext_resource type="Script" uid="uid://b6v26f436c7pe" path="res://game.gd" id="1_u44n3"]
+[ext_resource type="Script" uid="uid://dwtvsv02e3vx4" path="res://scripts/поверх.gd" id="1_wbfu4"]
+[ext_resource type="PackedScene" uid="uid://7xsskpp4oqrl" path="res://ui.tscn" id="2_xkndl"]
+[ext_resource type="PackedScene" uid="uid://6swma1tj07w7" path="res://scanes/sca_1.tscn" id="3_r0x5m"]
+[ext_resource type="PackedScene" uid="uid://rj4fovbbxetr" path="res://scanes/sca_2.tscn" id="4_3mrqo"]
+[ext_resource type="PackedScene" uid="uid://clmkv1wyjd1lq" path="res://scanes/sca_3.tscn" id="5_joorw"]
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_u44n3")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 324)
+
+[node name="поверх" type="Node2D" parent="."]
+script = ExtResource("1_wbfu4")
+
+[node name="sca_1" parent="поверх" instance=ExtResource("3_r0x5m")]
+
+[node name="sca_2" parent="поверх" instance=ExtResource("4_3mrqo")]
+
+[node name="sca_3" parent="поверх" instance=ExtResource("5_joorw")]
+
+[node name="UI" parent="." instance=ExtResource("2_xkndl")]
